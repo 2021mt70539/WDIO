@@ -1,0 +1,32 @@
+{
+  "name": "webdriverio",
+  "version": "1.0.0",
+  "description": "wdio e2e tests",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "wdio": "wdio run ./wdio.conf.ts",
+    "demo": "wdio run ./wdio.conf.ts --cucumberOpts.tags='@securian'"
+  },
+  "keywords": [
+    "wdio",
+    "cucumber",
+    "e2e",
+    "tests"
+  ],
+  "author": "Pratik Mahapatra",
+  "type": "module",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^25.3.0",
+    "@wdio/allure-reporter": "^9.24.0",
+    "@wdio/cli": "^9.24.0",
+    "@wdio/cucumber-framework": "^9.24.0",
+    "@wdio/globals": "^9.23.0",
+    "@wdio/local-runner": "^9.24.0",
+    "@wdio/spec-reporter": "^9.24.0",
+    "dotenv": "^17.3.1",
+    "expect-webdriverio": "^5.6.4",
+    "winston": "^3.19.0"
+  }
+}
