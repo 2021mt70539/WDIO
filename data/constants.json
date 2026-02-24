@@ -1,0 +1,16 @@
+{
+  "currentAge": "40",
+  "retirementAge": "68",
+  "annualIncome": "100000",
+  "spouseAnnualIncome": "75000",
+  "currentSavings": "500000",
+  "currentContribution": "10",
+  "contributionIncrease": "2",
+  "socialSecurityOverride": "4000",
+  "otherIncome": "2000",
+  "retirementYears": "30",
+  "inflationRate":"7",
+  "incomeReplacement": "80",
+  "preRetirementReturn": "7",
+  "postRetirementReturn": "4"
+}

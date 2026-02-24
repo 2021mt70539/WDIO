@@ -1,12 +1,12 @@
 {
   "name": "webdriverio",
   "version": "1.0.0",
-  "description": "wdio e2e tests",
+  "description": "Securian Retierment Calculator E2E testCases",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "wdio": "wdio run ./wdio.conf.ts",
-    "demo": "wdio run ./wdio.conf.ts --cucumberOpts.tags='@securian'"
+    "securian": "wdio run ./wdio.conf.ts --cucumberOpts.tags='@regression'"
   },
   "keywords": [
     "wdio",
