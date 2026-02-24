@@ -22,49 +22,67 @@ class adjustDefaultValuesPage {
 
 
     public async adjustDefaultValueClick(): Promise<void> {
-        utils.clickElement(this.adjustDefaultValueLink);
-        logger.info(`User Clicked on adjustDefaultValueLink`)
+        try {
+            utils.clickElement(this.adjustDefaultValueLink);
+            logger.info(`User Clicked on adjustDefaultValueLink`)
+        }
+        catch (error) {
+            logger.error(`Error while clicking adjustDefaultValueLink: ${error}`);
+            throw error;
+        }
     }
 
-        public async enteradjustDefaultValue(): Promise<void> {
-        utils.clickElement(this.otherRetirementlIncome);
-        logger.info(`User Clicked on otherRetirementlIncome`)
-        utils.setValue(this.otherRetirementlIncome, testdata.otherIncome)
-        logger.info(`User entered otherRetirementlIncome`)
+    public async enteradjustDefaultValue(): Promise<void> {
+        try {
+            utils.clickElement(this.otherRetirementlIncome);
+            logger.info(`User Clicked on otherRetirementlIncome`)
+            utils.setValue(this.otherRetirementlIncome, testdata.otherIncome)
+            logger.info(`User entered otherRetirementlIncome`)
 
-        utils.clickElement(this.yearOnRetirementIncome);
-        logger.info(`User Clicked on yearOnRetirementIncome`)
-        utils.setValue(this.yearOnRetirementIncome, testdata.retirementYears)
-        logger.info(`User entered yearOnRetirementIncome`)
+            utils.clickElement(this.yearOnRetirementIncome);
+            logger.info(`User Clicked on yearOnRetirementIncome`)
+            utils.setValue(this.yearOnRetirementIncome, testdata.retirementYears)
+            logger.info(`User entered yearOnRetirementIncome`)
 
-        utils.clickElement(this.includeInflation);
-        logger.info(`User Clicked on includeInflation`)
+            utils.clickElement(this.includeInflation);
+            logger.info(`User Clicked on includeInflation`)
 
-        utils.clickElement(this.inflationRate);
-        logger.info(`User Clicked on inflationRate`)
-        utils.setValue(this.inflationRate, testdata.inflationRate)
-        logger.info(`User entered inflationRate`)
+            utils.clickElement(this.inflationRate);
+            logger.info(`User Clicked on inflationRate`)
+            utils.setValue(this.inflationRate, testdata.inflationRate)
+            logger.info(`User entered inflationRate`)
 
-        utils.clickElement(this.retirementAnnualIncome);
-        logger.info(`User Clicked on retirementAnnualIncome`)
-        utils.setValue(this.retirementAnnualIncome, testdata.incomeReplacement)
-        logger.info(`User entered retirementAnnualIncome`)
+            utils.clickElement(this.retirementAnnualIncome);
+            logger.info(`User Clicked on retirementAnnualIncome`)
+            utils.setValue(this.retirementAnnualIncome, testdata.incomeReplacement)
+            logger.info(`User entered retirementAnnualIncome`)
 
-        utils.clickElement(this.preRetiermentRoi);
-        logger.info(`User Clicked on preRetiermentRoi`)
-        utils.setValue(this.preRetiermentRoi, testdata.preRetirementReturn)
-        logger.info(`User entered preRetiermentRoi`)
+            utils.clickElement(this.preRetiermentRoi);
+            logger.info(`User Clicked on preRetiermentRoi`)
+            utils.setValue(this.preRetiermentRoi, testdata.preRetirementReturn)
+            logger.info(`User entered preRetiermentRoi`)
 
-        utils.clickElement(this.postRetiermentRoi);
-        logger.info(`User Clicked on postRetiermentRoi`)
-        utils.setValue(this.postRetiermentRoi, testdata.postRetirementReturn)
-        logger.info(`User entered postRetiermentRoi`)
-
+            utils.clickElement(this.postRetiermentRoi);
+            logger.info(`User Clicked on postRetiermentRoi`)
+            utils.setValue(this.postRetiermentRoi, testdata.postRetirementReturn)
+            logger.info(`User entered postRetiermentRoi`)
+        }
+        catch (error) {
+            logger.error(`Error while entering adjustDefaultValue: ${error}`);
+            throw error;
         }
 
-        public async adjustDefaultValueSaveClick(): Promise<void> {
-        utils.clickElement(this.adjustDefaultValueSaveClickBtn);
-        logger.info(`User Clicked on adjustDefaultValueSave Button`)
+    }
+
+    public async adjustDefaultValueSaveClick(): Promise<void> {
+        try {
+            utils.clickElement(this.adjustDefaultValueSaveClickBtn);
+            logger.info(`User Clicked on adjustDefaultValueSave Button`)
+        }
+        catch (error) {
+            logger.error(`Error while clicking adjustDefaultValueSave Button: ${error}`);
+            throw error;
+        }
     }
 }
 
